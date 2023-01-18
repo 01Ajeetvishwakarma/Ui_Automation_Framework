@@ -1,0 +1,3406 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Framework</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 29, 2022 12:08:29</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Case1</a><a class="dropdown-item" href="#">@Case111</a><a class="dropdown-item" href="#">@Case114</a><a class="dropdown-item" href="#">@iLMS</a><a class="dropdown-item" href="#">@judgement</a><a class="dropdown-item" href="#">@Case11</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Judgement Field Validation</p>
+            <p class="text-sm">
+              <span>12:08:29 PM</span> / <span>00:01:56:151</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Judgement Field Validation</h5>
+<span class='badge badge-success'>12.29.2022 12:08:29 PM</span>
+<span class='badge badge-danger'>12.29.2022 12:10:25 PM</span>
+<span class='badge badge-default'>00:01:56:151</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify the Type of order dropdown</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>Given user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.selectValue(java.lang.String,java.lang.String)">
+                <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.selectValue(java.lang.String,java.lang.String)">
+                <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_JudgementTab" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_TypeOfOrderDropdown" button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Verify the Order Date calender dropdown</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>Given user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.selectValue(java.lang.String,java.lang.String)">
+                <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.selectValue(java.lang.String,java.lang.String)">
+                <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_JudgementTab" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS OrderDate Calender" button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="30"><span class="badge log pass-bg mr-2">Pass</span>Verify the Overriding Order No text box</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>Given user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.selectValue(java.lang.String,java.lang.String)">
+                <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.selectValue(java.lang.String,java.lang.String)">
+                <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_JudgementTab" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "11Ajit" in "iLMS Overriding Order Number"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userAbleTOSeeMessage(java.lang.String,java.lang.String)">
+                <span>Then user should able to see "Please enter only number" on "iLMS OverridingOrderNumber Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Verify the Reason for revised compliance date text box</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>Given user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.selectValue(java.lang.String,java.lang.String)">
+                <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.selectValue(java.lang.String,java.lang.String)">
+                <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userClickOnButton(java.lang.String)">
+                <span>And user click on the "iLMS_JudgementTab" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userEnterText(java.lang.String,java.lang.String)">
+                <span>And user enter "a                               a" in "iLMS RevisedComplianceReason"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="steps.CreateCaseSteps.userAbleTOSeeMessage(java.lang.String,java.lang.String)">
+                <span>Then user should able to see "Please enter valid length not more than 32 characters" on "iLMS RevisedComplianceReason Message"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">iLMS</p>
+            <p class="text-sm">
+              <span>12:10:25 PM</span> / <span>00:13:50:784</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">iLMS</h5>
+<span class='badge badge-success'>12.29.2022 12:10:25 PM</span>
+<span class='badge badge-danger'>12.29.2022 12:24:16 PM</span>
+<span class='badge badge-default'>00:13:50:784</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>Verify User Login with valid username and Password</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="62"><span class="badge log pass-bg mr-2">Pass</span>Verify User Login with valid username and Password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>Verify the Cnr number for invalid data</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="69"><span class="badge log pass-bg mr-2">Pass</span>Verify the Cnr number for invalid data</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "Case1234567812" in "iLMS_CnrNumber"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "CNR Number Must Be Alphanumeric" and "iLMS_CnrNumber_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="78"><span class="badge log pass-bg mr-2">Pass</span>Verify the caseNumber for invalid data</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="79"><span class="badge log pass-bg mr-2">Pass</span>Verify the caseNumber for invalid data</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "20222345@6786" in "iLMS CaseNumber"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Special Characters Not Allowed" and "iLMS CaseNumber_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>Verify the case year for invalid format</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>Verify the case year for invalid format</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "202" in "iLMS caseYear"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Case Year Must Be 4 digit" and "iLMS caseYear_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="98"><span class="badge log pass-bg mr-2">Pass</span>Verify the case year for invalid format</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "2023" in "iLMS caseYear"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Case Year Is Invalid" and "iLMS caseYear_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Verify the valid first name under Petitioner Details.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>Verify the valid first name under Petitioner Details.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "Akrant Verma3" in "iLMS petitioner_FirstName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "first Name Is Invalid" and "iLMS petitioner_FirstName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="117"><span class="badge log pass-bg mr-2">Pass</span>Verify the valid contact number format under Petitioner Details.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="118"><span class="badge log pass-bg mr-2">Pass</span>Verify the valid contact number format under Petitioner Details.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "567777" in "iLMS petitionerContactNumber"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Contact Number Is Invalid" and "iLMS petitionerContactNumber_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>Verify the valid first name under Petitioner Advocate Details.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="128"><span class="badge log pass-bg mr-2">Pass</span>Verify the valid first name under Petitioner Advocate Details.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "sadfdfsdss5" in "iLMS petitionerAdvocateFirstName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "First Name Is Invalid" and "iLMS petitionerAdvocateFirstName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="137"><span class="badge log pass-bg mr-2">Pass</span>Verify the valid contact number under Petitioner Advocate Details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="138"><span class="badge log pass-bg mr-2">Pass</span>Verify the valid contact number under Petitioner Advocate Details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "sadfdfsdss" in "iLMS petitionerAdvocateContactNo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Contact Number Is Invalid" and "iLMS petitionerAdvocateContactNo_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="147"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid first name under respondent details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="148"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid first name under respondent details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "sadfdfsdss2" in "iLMS respodentFirstName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "first Name Is Invalid" and "iLMS respodentFirstName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="157"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid first name under respondent details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "sadfdfsdss2" in "iLMS respodentLastName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Last Name Is Invalid" and "iLMS respodentLastName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="166"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid contact number under respondent details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="167"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid contact number under respondent details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "sadfdfsdss" in "iLMS respodentContact"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Contact Number Is Invalid" and "iLMS respodentContact_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="176"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid first name under respondent advocate details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="177"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid first name under respondent advocate details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "sadfdfsdss2" in "iLMS respodentAdvocateFirstName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "First Name Is Invalid" and "iLMS respodentAdvocateFirstName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="186"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid last name under respondent advocate details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="187"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid last name under respondent advocate details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "sadfdfsdss2" in "iLMS respodentAdvocateLastName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Last Name Is Invalid" and "iLMS respodentAdvocateLastName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="196"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid contact number under respondent advocate details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="197"><span class="badge log pass-bg mr-2">Pass</span>Verify the invalid contact number under respondent advocate details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "sadfdfsdss" in "iLMS respodentAdvocateContactNo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Contact Number Is Invalid" and "iLMS respodentAdvocateContactNo_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="206"><span class="badge log pass-bg mr-2">Pass</span>Verify the rule number under act master.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="207"><span class="badge log pass-bg mr-2">Pass</span>Verify the rule number under act master.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "34566333333333333342222226655555676" in "iLMS sectionRuleNumber"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Length Must Be 32" and "iLMS sectionRuleNumber_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="216"><span class="badge log pass-bg mr-2">Pass</span>Verify Re-enter Cnr Number error message</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="217"><span class="badge log pass-bg mr-2">Pass</span>Verify Re-enter Cnr Number error message</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "Case123456781234" in "iLMS_CnrNumber"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "Case1234567812" in "iLMS re_EnterCnrNumber"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS verifyButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "CNR number didn't match Re-enter" and "iLMS re_EnterCnrNumber_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="228"><span class="badge log pass-bg mr-2">Pass</span>Verify Petitioner Last Name error message</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="229"><span class="badge log pass-bg mr-2">Pass</span>Verify Petitioner Last Name error message</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_AddNewCase" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "fcgcg2" in "iLMS petitionerLastName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Last Name Is Invalid" and "iLMS petitionerLastName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="238"><span class="badge log pass-bg mr-2">Pass</span>Verify hearing page</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="239"><span class="badge log pass-bg mr-2">Pass</span>Verify hearing page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="252"><span class="badge log pass-bg mr-2">Pass</span>Verify the add button functionality of hearing page.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="253"><span class="badge log pass-bg mr-2">Pass</span>Verify the add button functionality of hearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="267"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of court number of gearing page.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="268"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of court number of gearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "ddsaaa" in "iLMS CourtName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "COURT_NO_IS_INVALID" and "iLMS CourtName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="284"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of court number of gearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "111@dd12" in "iLMS CourtName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "SPECIAL_CHARACTER_IS_NOT_ALLOWED" and "iLMS CourtName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="300"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of court number of gearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "12334455666" in "iLMS CourtName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "COURT_NUMBER_MUST_BE_BETWEEN 1 AND 10_DIGIT" and "iLMS CourtName_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="316"><span class="badge log fail-bg mr-2">Fail</span>Verify the error message of judge name of hearing page.</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="317"><span class="badge log fail-bg mr-2">Fail</span>Verify the error message of judge name of hearing page.</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "ddsaaa@22" in "iLMS JudgeName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user should able to see "Judge name is invalid" and "iLMS CourtName_Title"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [Judge name is invalid] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at action.CreateCaseActions.getTitle(CreateCaseActions.java:40)
+	at steps.CreateCaseSteps.getTitle(CreateCaseSteps.java:55)
+	at ✽.user should able to see "Judge name is invalid" and "iLMS CourtName_Title"(file:///D:/Piramal/Piramal-QA/src/test/resources/Features/iLMS_Hearing.feature:73)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Verify the error message of judge name of hearing page.
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="333"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of judge name of hearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "ddsaaa@22" in "iLMS purposeOfHearing"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Special characters not allowed" and "iLMS purposeOfHearing_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="349"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of judge name of hearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "ddsaaa234222222222242444444444444444444211111333" in "iLMS purposeOfHearing"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Purpose of Hearing must be smaller than 32 character" and "iLMS purposeOfHearing_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="365"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of officerRequired of hearing page.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="366"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of officerRequired of hearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "ddsaaa@22" in "iLMS officerRequired"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Special characters not allowed" and "iLMS officerRequired_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="382"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of officerRequired of hearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "ddsaaa234222222222242444444444444444444211111333" in "iLMS officerRequired"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Must be less than 32 chracters" and "iLMS officerRequired_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="398"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of fineAmount of hearing page.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="399"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of fineAmount of hearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "3434334212222" in "iLMS fineAmount"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Fine amount must be under 10 digits." and "iLMS fineAmount_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="415"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of fineAmount of hearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "2222--" in "iLMS fineAmount"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Please enter amount" and "iLMS fineAmount_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="431"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of departmentOfficer of hearing page.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="432"><span class="badge log pass-bg mr-2">Pass</span>Verify the error message of departmentOfficer of hearing page.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>And user enter "EMP_DEC" in "iLMS_UserName"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "E5mO#7mS" in "iLMS_Password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Continue" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Inbox" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "CASENUMBER11" in "iLMS_CaseSearchBox"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_Search" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "CASENUMBER11" from list "iLMS_CaseList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS_ActionButton" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user select "EDIT" from list "iLMS_ActionList"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on the "iLMS Hearing" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on the "iLMS AddNew" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user enter "3434334212222" in "iLMS departmentOfficer"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should able to see "Only characters allowed" and "iLMS departmentOfficer_Title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:20:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='331'>Then user should able to see "Judge name is invalid" and "iLMS CourtName_Title"</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of judge name of hearing page..Then user should able to see "Judge name is invalid" and "iLMS CourtName_Title"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Case1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Case1</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='229'>Verify Petitioner Last Name error message</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify Petitioner Last Name error message</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Case111</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Case111</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:13:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='148'>Verify the invalid first name under respondent details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid first name under respondent details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:14:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='157'>Verify the invalid first name under respondent details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid first name under respondent details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>14</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Case114</p>
+<p class="duration text-sm">15 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Case114</h4>
+<span status="pass" class='badge log pass-bg'>14 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:11:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='89'>Verify the case year for invalid format</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the case year for invalid format</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:11:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='98'>Verify the case year for invalid format</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the case year for invalid format</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='239'>Verify hearing page</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify hearing page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='253'>Verify the add button functionality of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the add button functionality of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='268'>Verify the error message of court number of gearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of court number of gearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='284'>Verify the error message of court number of gearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of court number of gearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:19:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='300'>Verify the error message of court number of gearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of court number of gearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:20:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='317'>Verify the error message of judge name of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of judge name of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:20:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='333'>Verify the error message of judge name of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of judge name of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:21:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='349'>Verify the error message of judge name of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of judge name of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:21:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='366'>Verify the error message of officerRequired of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of officerRequired of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:22:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='382'>Verify the error message of officerRequired of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of officerRequired of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:22:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='399'>Verify the error message of fineAmount of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of fineAmount of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:23:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='415'>Verify the error message of fineAmount of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of fineAmount of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:23:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='432'>Verify the error message of departmentOfficer of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of departmentOfficer of hearing page.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>34</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@iLMS</p>
+<p class="duration text-sm">35 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@iLMS</h4>
+<span status="pass" class='badge log pass-bg'>34 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:08:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify the Type of order dropdown</a>
+<div class="">
+<span class="badge badge-default">Judgement Field Validation.Verify the Type of order dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:08:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Verify the Order Date calender dropdown</a>
+<div class="">
+<span class="badge badge-default">Judgement Field Validation.Verify the Order Date calender dropdown</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:09:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>Verify the Overriding Order No text box</a>
+<div class="">
+<span class="badge badge-default">Judgement Field Validation.Verify the Overriding Order No text box</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:09:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>Verify the Reason for revised compliance date text box</a>
+<div class="">
+<span class="badge badge-default">Judgement Field Validation.Verify the Reason for revised compliance date text box</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:10:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='62'>Verify User Login with valid username and Password</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify User Login with valid username and Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:10:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='69'>Verify the Cnr number for invalid data</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the Cnr number for invalid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:11:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='79'>Verify the caseNumber for invalid data</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the caseNumber for invalid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:11:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='89'>Verify the case year for invalid format</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the case year for invalid format</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:11:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='98'>Verify the case year for invalid format</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the case year for invalid format</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='108'>Verify the valid first name under Petitioner Details.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the valid first name under Petitioner Details.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='118'>Verify the valid contact number format under Petitioner Details.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the valid contact number format under Petitioner Details.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:13:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='128'>Verify the valid first name under Petitioner Advocate Details.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the valid first name under Petitioner Advocate Details.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:13:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='138'>Verify the valid contact number under Petitioner Advocate Details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the valid contact number under Petitioner Advocate Details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:13:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='148'>Verify the invalid first name under respondent details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid first name under respondent details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:14:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='157'>Verify the invalid first name under respondent details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid first name under respondent details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:14:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='167'>Verify the invalid contact number under respondent details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid contact number under respondent details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:15:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='177'>Verify the invalid first name under respondent advocate details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid first name under respondent advocate details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:15:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='187'>Verify the invalid last name under respondent advocate details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid last name under respondent advocate details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:15:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='197'>Verify the invalid contact number under respondent advocate details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid contact number under respondent advocate details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='207'>Verify the rule number under act master.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the rule number under act master.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='217'>Verify Re-enter Cnr Number error message</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify Re-enter Cnr Number error message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='229'>Verify Petitioner Last Name error message</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify Petitioner Last Name error message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='239'>Verify hearing page</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify hearing page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='253'>Verify the add button functionality of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the add button functionality of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='268'>Verify the error message of court number of gearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of court number of gearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='284'>Verify the error message of court number of gearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of court number of gearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:19:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='300'>Verify the error message of court number of gearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of court number of gearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:20:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='317'>Verify the error message of judge name of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of judge name of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:20:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='333'>Verify the error message of judge name of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of judge name of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:21:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='349'>Verify the error message of judge name of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of judge name of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:21:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='366'>Verify the error message of officerRequired of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of officerRequired of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:22:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='382'>Verify the error message of officerRequired of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of officerRequired of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:22:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='399'>Verify the error message of fineAmount of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of fineAmount of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:23:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='415'>Verify the error message of fineAmount of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of fineAmount of hearing page.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:23:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='432'>Verify the error message of departmentOfficer of hearing page.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the error message of departmentOfficer of hearing page.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@judgement</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@judgement</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:09:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>Verify the Reason for revised compliance date text box</a>
+<div class="">
+<span class="badge badge-default">Judgement Field Validation.Verify the Reason for revised compliance date text box</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>14</span>
+</span>
+<p class="name">@Case11</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Case11</h4>
+<span status="pass" class='badge log pass-bg'>14 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:10:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='62'>Verify User Login with valid username and Password</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify User Login with valid username and Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:10:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='69'>Verify the Cnr number for invalid data</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the Cnr number for invalid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:11:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='79'>Verify the caseNumber for invalid data</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the caseNumber for invalid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='108'>Verify the valid first name under Petitioner Details.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the valid first name under Petitioner Details.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='118'>Verify the valid contact number format under Petitioner Details.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the valid contact number format under Petitioner Details.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:13:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='128'>Verify the valid first name under Petitioner Advocate Details.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the valid first name under Petitioner Advocate Details.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:13:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='138'>Verify the valid contact number under Petitioner Advocate Details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the valid contact number under Petitioner Advocate Details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:14:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='157'>Verify the invalid first name under respondent details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid first name under respondent details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:14:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='167'>Verify the invalid contact number under respondent details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid contact number under respondent details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:15:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='177'>Verify the invalid first name under respondent advocate details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid first name under respondent advocate details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:15:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='187'>Verify the invalid last name under respondent advocate details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid last name under respondent advocate details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:15:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='197'>Verify the invalid contact number under respondent advocate details</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the invalid contact number under respondent advocate details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='207'>Verify the rule number under act master.</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify the rule number under act master.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='60' id='217'>Verify Re-enter Cnr Number error message</a>
+<div class="">
+<span class="badge badge-default">iLMS.Verify Re-enter Cnr Number error message</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 29, 2022 12:08:29</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 29, 2022 12:24:16</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='97%'><b>34</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='2%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='99%'><b>317</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Judgement Field Validation":116.151,"iLMS":830.784
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Case1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Case111</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Case114</td>
+<td>14</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>93.333%</td>
+</tr>
+<tr>
+<td>@iLMS</td>
+<td>34</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>97.143%</td>
+</tr>
+<tr>
+<td>@judgement</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Case11</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 34,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 317,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
