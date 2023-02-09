@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 27.365 s <<< FAILURE! - in TestSuite
+runnerClass.RunnerClass.runScenario["Verify the Reason for revised compliance date text box", "Judgement Field Validation"](1)  Time elapsed: 25.848 s  <<< FAILURE!
+java.lang.AssertionError: expected [Please enter valid length not more than 32 characters] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at action.CreateCaseActions.ableToSeeMessage(CreateCaseActions.java:64)
+	at steps.CreateCaseSteps.userAbleTOSeeMessage(CreateCaseSteps.java:38)
+	at ✽.user should able to see "Please enter valid length not more than 32 characters" on "iLMS RevisedComplianceReason Message"(file:///D:/Piramal/Piramal-QA/src/test/resources/Features/JudgementValidation.feature:51)
+
