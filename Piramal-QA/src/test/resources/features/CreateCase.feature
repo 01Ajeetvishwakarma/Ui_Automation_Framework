@@ -13,25 +13,34 @@ Feature: Create Case
     And user enter random "CnrNumber" in "iLMS re_EnterCnrNumber"
     And user click on the "iLMS verifyButton" button
     And user click on the "iLMS CaseType Dropdown" button
-    And user select "Arbitration Case (Domestic Commercial)" from list "iLMS CaseType List"
+    And user select "Arbitration Case (Domestic Commercial)" from list "iLMS DropdownList"
     And user click on the "iLMS CaseCategory Dropdown" button
-    And user select "Service Matters" from list "iLMS CaseCategory List"
+    And user select "Service Matters" from list "iLMS DropdownList"
     And user enter random "CaseNumber" in "iLMS CaseNumber"
     And user enter "2022" in "iLMS caseYear"
     And user enter "23" in "iLMS FilingNumber"
-    And user click on the "iLMS FilingDate" button
-
+    And user scroll down
+#    And user click on the "iLMS FilingDate" button
+#    And user enter "19/01/2023" in "iLMS FilingDate InputBox"
+    And user enter the date "19/1/2023" in "iLMS FilingDate InputBox"
+#    And user click on the "iLMS RegistrationDate" button
+#    And user enter "20/01/2023" in "iLMS RegistrationDate InputBox"
+    And user enter the date "21/1/2023" in "iLMS RegistrationDate InputBox"
     And user enter "Case Creation" in "iLMS CaseSummary"
     And user enter "case" in "iLMS ArisingOutDetail"
     And user click on the "iLMS policyNonPolicyMatter Yes" button
     And user scroll down
     And user click on the "iLMS isCaseNoCorrect Yes" button
+    And user click on the "iLMS IsCaseNumberCorrect Confirm" button
     And user scroll down
     And user click on the "iLMS StatusOfCase" button
     And user select "Pending for admission" from list "iLMS DropdownList"
-
-
-
+#    And user enter "21/01/2023" in "iLMS FirstHearingDate InputBox"
+    And user enter the date "21/01/2023" in "iLMS FirstHearingDate InputBox"
+#    And user enter "23/01/2023" in "iLMS PreviousHearingDate InputBox"
+    And user enter the date "23/01/2023" in "iLMS PreviousHearingDate InputBox"
+#    And user enter "25/01/2023" in "iLMS NextHearingDate InputBox"
+    And user enter the date "25/01/2023" in "iLMS NextHearingDate InputBox"
     And user click on the "iLMS StageOfCase" button
     And user select "Notice for petition / Copy of petition uploaded" from list "iLMS DropdownList"
     And user click on the "iLMS SubStageOfCase" button
@@ -67,3 +76,5 @@ Feature: Create Case
     And user select "DIRECTORATE PUBLIC INSTRUCTION" from list "iLMS DropdownList"
     And user click on the "iLMS Recommended OIC Dropdown" button
     And user select "District Educational Officer" from list "iLMS DropdownList"
+    Then user click on the "iLMS Save" button
+

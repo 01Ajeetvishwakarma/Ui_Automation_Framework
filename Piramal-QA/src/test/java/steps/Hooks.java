@@ -7,6 +7,7 @@ import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -48,8 +49,8 @@ public class Hooks extends BaseClass {
                 break;
         }
         driver.manage().window().maximize();
-        driver.get(prop.getProperty("url"));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.get(prop.getProperty("UAT_URL"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //        Thread.sleep(3000);
     }
 

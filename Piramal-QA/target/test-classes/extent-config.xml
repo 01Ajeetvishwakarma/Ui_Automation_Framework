@@ -24,7 +24,7 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>Extent Framework</documentTitle>
+        <documentTitle>Piramal-iLMS</documentTitle>
 
         <!-- report name - displayed at top-nav -->
         <reportName>Automation Report</reportName>
